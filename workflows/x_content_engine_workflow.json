@@ -555,7 +555,7 @@
     {
       "parameters": {
         "operation": "sendAndWait",
-        "chatId": "6975580987",
+        "chatId": "YOUR_CHAT_ID_HERE",
         "message": "=\ud83d\udce2 *Approval Request for X Post*\n\n*Headline:* {{ $(\"Loop Batch\").item.json.title }}\n*Source:* {{ $(\"Loop Batch\").item.json.link }}\n\n*Variation A (Founder):*\n{{ $(\"QC Agent\").item.json.output?.refinedVariationA || $(\"QC Agent\").item.json.refinedVariationA }}\n\n*Variation B (Contrarian):*\n{{ $(\"QC Agent\").item.json.output?.refinedVariationB || $(\"QC Agent\").item.json.refinedVariationB }}\n\n*Variation C (Educational):*\n{{ $(\"QC Agent\").item.json.output?.refinedVariationC || $(\"QC Agent\").item.json.refinedVariationC }}",
         "responseType": "customForm",
         "formFields": {
@@ -800,7 +800,7 @@
     },
     {
       "parameters": {
-        "chatId": "6975580987",
+        "chatId": "YOUR_CHAT_ID_HERE",
         "text": "=\u26a0\ufe0f *X Content Engine Alert* \u26a0\ufe0f\n\nWorkflow Execution failed!\n\n*Error Node:* {{ $json.execution?.error?.node?.name || \"Unknown Node\" }}\n*Error Message:* {{ $json.execution?.error?.message || \"No error details available\" }}\n*Execution ID:* {{ $json.execution?.id }}",
         "additionalFields": {}
       },
