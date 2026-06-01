@@ -52,12 +52,16 @@ CREATE TABLE IF NOT EXISTS workflow_activity (
 );
 ```
 
-### 2. Import Workflow
-1. Open your n8n dashboard.
-2. Click **Add Workflow** -> **Import from File**.
-3. Select `x_content_engine_workflow.json` from this repository.
+### 1. Import Workflow (Copy & Paste Method)
+The easiest way to install this workflow is to copy and paste it directly into your n8n canvas!
 
-### 3. Connect Credentials
+1. Open this link to the raw JSON file: [**Click here for the raw Workflow JSON**](https://raw.githubusercontent.com/sidhardhbalaji/x-automation-N8N/main/workflows/x_content_engine_workflow.json)
+2. Press `Ctrl + A` (or `Cmd + A` on Mac) to select all the text, and copy it (`Ctrl + C`).
+3. Open your n8n dashboard and create a new, blank workflow.
+4. Click anywhere on the blank canvas and press `Ctrl + V` (or `Cmd + V`) to paste. 
+5. The entire workflow will instantly appear!
+
+### 2. Database Setup
 Once imported, you will need to open the nodes that have missing credentials and create them:
 - **OpenAI API**: Enter your OpenAI API key.
 - **Postgres DB**: Enter your database host (e.g., `localhost`), user, password, and database name.
