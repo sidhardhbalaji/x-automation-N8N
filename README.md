@@ -52,14 +52,15 @@ CREATE TABLE IF NOT EXISTS workflow_activity (
 );
 ```
 
-### 1. Import Workflow (Copy & Paste Method)
-The easiest way to install this workflow is to copy and paste it directly into your n8n canvas!
+### 1. Import Workflow
+The safest and most reliable way to install this workflow is to download the JSON file and import it directly into n8n.
 
-1. Open this link to the raw JSON file: [**Click here for the raw Workflow JSON**](https://raw.githubusercontent.com/sidhardhbalaji/x-automation-N8N/main/workflows/x_content_engine_workflow.json)
-2. Press `Ctrl + A` (or `Cmd + A` on Mac) to select all the text, and copy it (`Ctrl + C`).
-3. Open your n8n dashboard and create a new, blank workflow.
-4. Click anywhere on the blank canvas and press `Ctrl + V` (or `Cmd + V`) to paste. 
-5. The entire workflow will instantly appear!
+1. **Download the file**: Click here to download [**`x_content_engine_workflow.json`**](https://raw.githubusercontent.com/sidhardhbalaji/x-automation-N8N/main/workflows/x_content_engine_workflow.json) (Right-click the page and select "Save As...").
+2. Open your n8n dashboard and go to your Workflows.
+3. Click the **Add Workflow** button in the top right.
+4. Click the **`...` (Options)** menu in the top right of the canvas.
+5. Select **Import from File...** and choose the JSON file you just downloaded.
+6. The entire workflow will instantly populate!
 
 ### 2. Database Setup
 Once imported, you will need to open the nodes that have missing credentials and create them:
