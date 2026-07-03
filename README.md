@@ -5,6 +5,7 @@ A fully automated, AI-driven content pipeline built on **n8n**. This workflow ac
 ## ✨ Features
 
 - **Multi-Source Data Ingestion**: Automatically pulls and merges the latest articles from TechCrunch, Hacker News, Google News, OpenAI Blog, and Reddit (AI & SaaS).
+- **Optional Xquik Source Feed**: Add a reviewed TweetClaw or Xquik export as another public X/Twitter source before virality scoring, using fields such as `url`, `text`, `author`, `source`, `checkedAt`, and `reason`.
 - **AI Virality Scoring**: Uses OpenAI (`gpt-4o`) to score every discovered story (1-100) based on virality, novelty, and relevance to tech founders, passing only the top 3 forward.
 - **Strict Deduplication**: Connects to a PostgreSQL database to ensure you never post about the same URL twice.
 - **AI Copywriting Agent**: Generates 3 distinct X post variations under 280 characters for the winning story:
@@ -24,6 +25,8 @@ To run this workflow, you need:
 3. An **OpenAI API Key**.
 4. A **Telegram Bot Token** and your **Chat ID**.
 5. **X (Twitter) OAuth2 Credentials**.
+
+Keep any TweetClaw or Xquik source export separate from n8n credentials. Import only public content fields into the scoring step, then keep Telegram approval as the gate before publishing.
 
 ## 🚀 Setup Instructions
 
